@@ -1,1 +1,1 @@
-## Hotel reservation system with Firebase
+## Hotel Booking system with Firebase
