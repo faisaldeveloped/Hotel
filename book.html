@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Room</title>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-storage-compat.js"></script>
+    <script defer src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+
+    <nav id="nav">
+        <div class="row row-center">
+            <i class="bi bi-house-door-fill nav-icon"></i>
+        <h1>Hotel</h1>
+        </div>
+
+        <div id="user-nav" class="row row-center">
+            <a href="./book.html">Book</a>
+            <a href="./current-room.html">Current Room</a>
+            <a onclick="logout()" href="#">Log out</a>
+        </div>
+
+        <div id="visitor-nav" class="row row-center">
+            <a href="./signup.html">Create Account</a>
+            <a href="./login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h2 class="row">Available Rooms</h2>
+
+        <div id="rooms-container" class="grid">
+            No Rooms..
+        </div>
+    </div>
+    
+
+    <script defer src="./js/check-auth.js"></script>
+    <script defer src="./js/book.js"></script>
+</body>
+</html>

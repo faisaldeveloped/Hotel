@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Add room</title>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-storage-compat.js"></script>
+    <script defer src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+
+    <div class="content">
+        <h2 class="row">Add Room</h2>
+        <div class="form col">
+            <input type="number" id="roomNumber" placeholder="Enter Room Number" />
+            <input type="number" id="floorNumber" placeholder="Enter Floor Number" />
+            <input type="number" id="bedNumber" placeholder="Enter Number of Beds" />
+            <input type="number" id="price" placeholder="Enter Price Room" />
+            <textarea id="desc" placeholder="Descripion"></textarea>
+            <button onclick="addRoom()">Add Room</button>
+        </div>
+    </div>
+    
+
+    <script defer src="../js/add-room.js"></script>
+</body>
+</html>
